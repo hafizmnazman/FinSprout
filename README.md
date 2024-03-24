@@ -1,2 +1,2 @@
 # FinSprout
-VHack USM 2024 Submission for PPB-4 Group
+VHack USM 2024 Submission for PPB-4 
