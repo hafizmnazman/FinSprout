@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FinSprout</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/finsprout_favicon-removebg-preview.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="FinSprout Logo" width="30px" height="30px" >
+        <span class="d-none d-lg-block">FinSprout</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li>
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class='bx bx-calculator'></i></i><span>Budgeting</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="Budgeting-Importance.html">
+              <i class="bi bi-circle"></i><span>Importance</span>
+            </a>
+          </li>
+          <li>
+            <a href="Budgeting-Tips.html">
+              <i class="bi bi-circle"></i><span>Tips</span>
+            </a>
+          </li>
+        
+        </ul>
+      </li><!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-cash-coin"></i><span>Savings</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="Savings-peace_of_mind.html">
+              <i class="bi bi-circle"></i><span>Peace Of Mind</span>
+            </a>
+          </li>
+          <li>
+            <a href="Savings-expanded_options.html">
+              <i class="bi bi-circle"></i><span>Expanded Options</span>
+            </a>
+          </li>
+          <li>
+            <a href="Savings-money_work.html">
+              <i class="bi bi-circle"></i><span>Money Working For You</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class='bx bx-line-chart'></i><span>Investing</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="Investing-importance.html">
+              <i class="bi bi-circle"></i><span>Importance</span>
+            </a>
+          </li>
+          <li>
+            <a href="Investing-fixed_deposit.html">
+              <i class="bi bi-circle"></i><span>Fixed Deposit</span>
+            </a>
+          </li>
+          <li>
+            <a href="Investing-asnb.html">
+              <i class="bi bi-circle"></i><span>ASNB</span>
+            </a>
+          </li>
+          <li>
+            <a href="Investing-stocks.html">
+              <i class="bi bi-circle"></i><span>Stocks</span>
+            </a>
+          </li>
+          <li>
+            <a href="Investing-unit_trust.html">
+              <i class="bi bi-circle"></i><span>Unit Trust</span>
+            </a>
+          </li>
+          <li>
+            <a href="Investing-real_estate.html">
+              <i class="bi bi-circle"></i><span>Real Estate</span>
+            </a>
+          </li>
+          <li>
+            <a href="Investing-reit.html">
+              <i class="bi bi-circle"></i><span>REITS</span>
+            </a>
+          </li>
+          <li>
+            <a href="Investing-crypto.html">
+              <i class="bi bi-circle"></i><span>Cryptocurrency</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class='bx bx-credit-card'></i><span>Financial Tools</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="Financial-credit_debit.html">
+              <i class="bi bi-circle"></i><span>Credit And Debit Cards</span>
+            </a>
+          </li>
+          <li>
+            <a href="Financial-credit_score.html">
+              <i class="bi bi-circle"></i><span>Credit Score</span>
+            </a>
+          </li>
+          <li>
+            <a href="Financial-student_loans.html">
+              <i class="bi bi-circle"></i><span>Student Loans</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Charts Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class='bx bxs-bank' ></i><span>Banks</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="Banks-keep_your_money.html">
+              <i class="bi bi-circle"></i><span>They Keep Your Money Safe</span>
+            </a>
+          </li>
+          <li>
+            <a href="Banks-lend_money.html">
+              <i class="bi bi-circle"></i><span>They Lend Money</span>
+            </a>
+          </li>
+          <li>
+            <a href="Banks-simplify_transactions.html">
+              <i class="bi bi-circle"></i><span>Simplify Transactions</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Icons Nav -->
+
+
+      <li class="nav-heading">About Us</li>
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-faq.html">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+    
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact Us</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+    
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Current Assets Price</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item">Dashboard</li>
+            <li class="breadcrumb-item active">Current Assets Price</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+  
+      
+  
+      <section class="section">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Stock Price Chart</h5>
+            
+                        <!-- Line Chart -->
+                        <div id="lineChart"></div>
+            
+                        <script>
+                            document.addEventListener("DOMContentLoaded", () => {
+                                // Hypothetical Apple Inc. (AAPL) stock prices for the first nine months
+                                const aaplStockPrices = [
+                                    130, 135, 132, 138, 140, 145, 150, 148, 155
+                                ];
+            
+                                new ApexCharts(document.querySelector("#lineChart"), {
+                                    series: [{
+                                        name: "AAPL",
+                                        data: aaplStockPrices
+                                    }],
+                                    chart: {
+                                        height: 350,
+                                        type: 'line',
+                                        zoom: {
+                                            enabled: false
+                                        },
+                                        toolbar: {
+                                            show: false
+                                        }
+                                    },
+                                    dataLabels: {
+                                        enabled: false
+                                    },
+                                    stroke: {
+                                        curve: 'smooth',
+                                        width: 2
+                                    },
+                                    grid: {
+                                        borderColor: '#f1f1f1',
+                                    },
+                                    xaxis: {
+                                        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+                                        labels: {
+                                            style: {
+                                                fontSize: '12px',
+                                                fontFamily: 'Arial, sans-serif',
+                                                fontWeight: 600,
+                                            }
+                                        }
+                                    },
+                                    yaxis: {
+                                        labels: {
+                                            style: {
+                                                fontSize: '12px',
+                                                fontFamily: 'Arial, sans-serif',
+                                                fontWeight: 600,
+                                            }
+                                        }
+                                    },
+                                    colors: ['#00cc00'] // Green color for the line
+                                }).render();
+                            });
+                        </script>
+                        <!-- End Line Chart -->
+            
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+          <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Gold Price Chart</h5>
+        
+                    <!-- Area Chart -->
+                    <div id="areaChart"></div>
+        
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            // Actual gold prices data for January 2023 from LBMA
+                            const goldPrices = [
+                                1791.90, 1796.20, 1796.30, 1791.60, 1787.60, 1784.10, 
+                                1792.40, 1796.20, 1802.30, 1807.40, 1810.70, 1804.90, 
+                                1808.60, 1807.20, 1809.10, 1809.20, 1814.40, 1813.90, 
+                                1806.80, 1793.40, 1796.90, 1793.10, 1796.70, 1804.10, 
+                                1806.70, 1808.50, 1805.20, 1805.70, 1805.40, 1802.20
+                            ];
+        
+                            // Dates for January 2023
+                            const dates = [
+                                "2023-01-01", "2023-01-02", "2023-01-03", "2023-01-04", "2023-01-05",
+                                "2023-01-06", "2023-01-07", "2023-01-08", "2023-01-09", "2023-01-10",
+                                "2023-01-11", "2023-01-12", "2023-01-13", "2023-01-14", "2023-01-15",
+                                "2023-01-16", "2023-01-17", "2023-01-18", "2023-01-19", "2023-01-20",
+                                "2023-01-21", "2023-01-22", "2023-01-23", "2023-01-24", "2023-01-25",
+                                "2023-01-26", "2023-01-27", "2023-01-28", "2023-01-29", "2023-01-30"
+                            ];
+        
+                            new ApexCharts(document.querySelector("#areaChart"), {
+                                series: [{
+                                    name: "Gold Price",
+                                    data: goldPrices
+                                }],
+                                chart: {
+                                    type: 'area',
+                                    height: 350,
+                                    zoom: {
+                                        enabled: false
+                                    }
+                                },
+                                dataLabels: {
+                                    enabled: false
+                                },
+                                stroke: {
+                                    curve: 'smooth'
+                                },
+                                subtitle: {
+                                    text: 'Gold Price Movements (January 2023)',
+                                    align: 'left'
+                                },
+                                labels: dates,
+                                xaxis: {
+                                    type: 'datetime',
+                                },
+                                yaxis: {
+                                    opposite: true
+                                },
+                                legend: {
+                                    horizontalAlign: 'left'
+                                },
+                                colors: ['#FFD700'] // Gold color
+                            }).render();
+                        });
+                    </script>
+                    <!-- End Area Chart -->
+        
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Unit Trust Holdings</h5>
+        
+                    <!-- Donut Chart -->
+                    <div id="donutChart"></div>
+        
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            new ApexCharts(document.querySelector("#donutChart"), {
+                                series: [44, 55, 13, 43, 22],
+                                chart: {
+                                    height: 350,
+                                    type: 'donut',
+                                    toolbar: {
+                                        show: true
+                                    }
+                                },
+                                labels: ['Stocks', 'Bonds', 'Real Estate', 'Commodities', 'Cash'],
+                                dataLabels: {
+                                    enabled: true,
+                                    formatter: function (val) {
+                                        return "RM" + val.toFixed(2); // Formats the value to display as currency
+                                    }
+                                },
+                                colors: ['#4caf50', '#2196f3', '#ff9800', '#9c27b0', '#f44336'], // Custom colors for different holdings
+                                legend: {
+                                    position: 'bottom',
+                                    horizontalAlign: 'center',
+                                    fontSize: '12px',
+                                    markers: {
+                                        width: 10,
+                                        height: 10,
+                                    }
+                                },
+                                plotOptions: {
+                                    pie: {
+                                        donut: {
+                                            labels: {
+                                                show: true,
+                                                total: {
+                                                    show: true,
+                                                    showAlways: true,
+                                                    formatter: function () {
+                                                        return "RM100.00"; // Total holding value
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                tooltip: {
+                                    enabled: true,
+                                    y: {
+                                        formatter: function (val) {
+                                            return "RM" + val.toFixed(2); // Tooltip value formatted as currency
+                                        }
+                                    }
+                                },
+                            }).render();
+                        });
+                    </script>
+                    <!-- End Donut Chart -->
+        
+                </div>
+            </div>
+        </div>
+        
+          
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Crypto Candlestick Chart</h5>
+            
+                        <!-- Candle Stick Chart -->
+                        <div id="candleStickChart" style="min-height: 400px;" class="echart"></div>
+            
+                        <script>
+                            document.addEventListener("DOMContentLoaded", () => {
+                                const data = [
+                                    [20, 34, 10, 38],
+                                    [40, 35, 30, 50],
+                                    [31, 38, 33, 44],
+                                    [38, 15, 5, 42],
+                                    [32, 45, 28, 50], // Additional data points
+                                    [45, 50, 40, 55],
+                                    [50, 48, 45, 52],
+                                    [48, 52, 46, 55],
+                                    [52, 56, 48, 60]
+                                ];
+            
+                                const seriesData = data.map(([open, close, low, high]) => {
+                                    return {
+                                        value: [open, close, low, high],
+                                        itemStyle: {
+                                            color: open > close ? 'red' : 'green', // Red for downward movement, green for upward movement
+                                            color0: open > close ? 'green' : 'red' // Inverted colors for opposite movement
+                                        }
+                                    };
+                                });
+            
+                                const chart = echarts.init(document.querySelector("#candleStickChart"));
+                                chart.setOption({
+                                    tooltip: {
+                                        trigger: 'axis',
+                                        axisPointer: {
+                                            type: 'cross'
+                                        }
+                                    },
+                                    xAxis: {
+                                        type: 'category',
+                                        data: ['2023-03-01', '2023-03-02', '2023-03-03', '2023-03-04', '2023-03-05', '2023-03-06', '2023-03-07', '2023-03-08', '2023-03-09']
+                                    },
+                                    yAxis: {
+                                        type: 'value',
+                                        scale: true
+                                    },
+                                    series: [{
+                                        type: 'candlestick',
+                                        data: seriesData
+                                    }]
+                                });
+                            });
+                        </script>
+                        <!-- End Candle Stick Chart -->
+            
+                    </div>
+                </div>
+            </div>
+            
+  
+        </div>
+      </section>
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>FinSprout</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a><strong>PPB-4</strong></a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

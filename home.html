@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSprout - Your Finance Assistant</title>
+    <link rel="stylesheet" href="assets/css/homestyle.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="assets/resources/logo.png" alt="">
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>"Money doesn't grow on trees, but that doesn't mean you can't grow money<span>.</span>"</h1>
+    </div>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#" class="forgot-link">Forgot Password</a>
+                </div>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+            <button onclick="openFile()" id="openFileButton" class="btn">Login</button>
+        </div>
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"><a href="#" class="terms-link">I agree to the terms and conditions</a></label>
+                </div>
+                <button type="submit" class="btn-register">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box forgot">
+            <h2>Forgot Password</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <button type="submit" class="btn-forgot">Forgot Password</button>
+                <div class="login-register">
+                    <p>Remember your password? <a href="#" class="remember-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box verify">
+            <h2>Email Verification</h2>
+            <h3>We have sent email to your email. Click the link to complete the verification process.</h3>
+            <form action="#">
+                <button type="submit" class="btn-verify">Verified</button>
+                <div class="login-register">
+                    <p>Remember your password? <a href="#" class="verify-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box reset">
+            <h2>Reset Password</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>New Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Confirm Password</label>
+                </div>
+            </form>
+            <button onclick="openFile()" class="btn" id="openFileSwitch">Reset Password</button>
+        </div>
+        <div class="form-box terms">
+            <h2>Terms & Conditions</h2>
+            <h3>1. Acceptance of Terms</h3>
+            <h4>By accessing or using the services provided by [group name] (hereinafter referred to as "the Company"), you agree to be bound by these terms and conditions. If you do not agree to these terms and conditions, please do not use the services.</h4>
+            <h3>2. Description of Services</h3>
+            <h4>The Company provides a web application-based platform that enables users to access financial tools, manage funds, and make transactions. The services also include personalized financial insights, investment opportunities, and access to various financial products offered by third-party partners.</h4>
+            <h3>3. User Registration and Identification</h3>
+            <h4>To utilize the full spectrum of services, users must register and create an account, providing accurate and up-to-date information. The Company reserves the right to verify user identity and perform necessary background checks to ensure compliance with regulatory requirements in Malaysia.</h4>
+        </div>
+        <div class="form-box quiz">
+            <h2>What is your age group?</h2>
+            <div class="radio-button">
+                <input type="radio" name="selection" id="one">
+                <label for="one">18-25</label>
+                <input type="radio" name="selection" id="two">
+                <label for="two">26-35</label>
+                <input type="radio" name="selection" id="three">
+                <label for="three">36-50</label>
+                <input type="radio" name="selection" id="four">
+                <label for="four">50+</label>
+            </div>
+            <button type="submit" class="btn-quiz">Next</button>
+        </div>
+        <div class="form-box quiz2">
+            <h2>What are you investing for?</h2>
+            <div class="radio-button">
+                <input type="radio" name="selection" id="one2">
+                <label for="one2">Retirement</label>
+                <input type="radio" name="selection" id="two2">
+                <label for="two2">Savings</label>
+                <input type="radio" name="selection" id="three2">
+                <label for="three2">Paying debt</label>
+                <input type="radio" name="selection" id="four2">
+                <label for="four2">Big purchase</label>
+            </div>
+            <button type="submit" class="btn-quiz2">Next</button>
+        </div>
+        <div class="form-box quiz3">
+            <h2>What is your monthly income?</h2>
+            <div class="radio-button">
+                <input type="radio" name="selection" id="one3">
+                <label for="one3">&lt RM3,000</label>
+                <input type="radio" name="selection" id="two3">
+                <label for="two3">&gt RM3,000</label>
+                <input type="radio" name="selection" id="three3">
+                <label for="three3">&gt RM5,000</label>
+                <input type="radio" name="selection" id="four3">
+                <label for="four3">&gt RM12,000</label>
+            </div>
+            <button type="submit" class="btn-quiz3">Next</button>
+        </div>
+        <div class="form-box quiz4">
+            <h2>How much is your savings?</h2>
+            <div class="radio-button">
+                <input type="radio" name="selection" id="one4">
+                <label for="one4">&lt RM3,000</label>
+                <input type="radio" name="selection" id="two4">
+                <label for="two4">&gt RM3,000</label>
+                <input type="radio" name="selection" id="three4">
+                <label for="three4">&gt RM5,000</label>
+                <input type="radio" name="selection" id="four4">
+                <label for="four4">&gt RM12,000</label>
+            </div>
+            <button type="submit" class="btn-quiz4">Next</button>
+        </div>
+        <div class="form-box quiz5">
+            <h2>How would you describe your income stability?</h2>
+            <div class="radio-button">
+                <input type="radio" name="selection" id="one5">
+                <label for="one5">Very unstable</label>
+                <input type="radio" name="selection" id="two5">
+                <label for="two5">Unstable</label>
+                <input type="radio" name="selection" id="three5">
+                <label for="three5">Stable</label>
+                <input type="radio" name="selection" id="four5">
+                <label for="four5">Very Stable</label>
+            </div>
+            <button type="submit" class="btn-quiz5">Next</button>
+        </div>
+        <div class="form-box quiz6">
+            <h2>How familiar are you with investing?</h2>
+            <div class="radio-button">
+                <input type="radio" name="selection" id="one6">
+                <label for="one6">Very familiar</label>
+                <input type="radio" name="selection" id="two6">
+                <label for="two6">Familiar</label>
+                <input type="radio" name="selection" id="three6">
+                <label for="three6">A little bit</label>
+                <input type="radio" name="selection" id="four6">
+                <label for="four6">Newbie</label>
+            </div>
+            <button type="submit" class="btn-quiz6">Next</button>
+        </div>
+        <div class="form-box quiz7">
+            <h2>Describe your attitude towards investing?</h2>
+            <div class="radio-button">
+                <input type="radio" name="selection" id="one7">
+                <label for="one7">Low risk</label>
+                <input type="radio" name="selection" id="two7">
+                <label for="two7">Mild Risk</label>
+                <input type="radio" name="selection" id="three7">
+                <label for="three7">Medium Risk</label>
+                <input type="radio" name="selection" id="four7">
+                <label for="four7">High Risk</label>
+            </div>
+            <button type="submit" class="btn-quiz7">Next</button>
+        </div>
+        <div class="form-box quiz8">
+            <h2>What would you do if you lose 10% in a year?</h2>
+            <div class="radio-button">
+                <input type="radio" name="selection" id="one8">
+                <label for="one8">Withdraw all</label>
+                <input type="radio" name="selection" id="two8">
+                <label for="two8">Sell some</label>
+                <input type="radio" name="selection" id="three8">
+                <label for="three8">Invest more</label>
+                <input type="radio" name="selection" id="four8">
+                <label for="four8">Do nothing</label>
+            </div>
+            <button type="submit" class="btn-quiz8">Next</button>
+        </div>
+        <div class="form-box result">
+            <h2>Suggested Portfolio:</h2>
+            <ion-icon name="diamond" class="diamond"></ion-icon>
+            <h3>Intermediate</h3>
+            <button onclick="openFile()" class="btn" id="openFile">Submit</button>
+        </div>
+        
+    </div>
+
+
+    <script src="assets/js/homescript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
